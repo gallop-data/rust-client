@@ -32,6 +32,8 @@ pub mod get_eth_default_collection_risk_request;
 pub use self::get_eth_default_collection_risk_request::GetEthDefaultCollectionRiskRequest;
 pub mod get_eth_default_token_risk_request;
 pub use self::get_eth_default_token_risk_request::GetEthDefaultTokenRiskRequest;
+pub mod get_eth_ens_lookup_request;
+pub use self::get_eth_ens_lookup_request::GetEthEnsLookupRequest;
 pub mod get_eth_historical_events_request;
 pub use self::get_eth_historical_events_request::GetEthHistoricalEventsRequest;
 pub mod get_eth_historical_transactions_request;

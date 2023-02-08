@@ -17,6 +17,7 @@ Method | HTTP request | Description
 [**get_eth_custom_token_risk**](EthereumApi.md#get_eth_custom_token_risk) | **POST** /insights/eth/getCustomTokenRisk | Custom Volatility & Risk Metrics by Token
 [**get_eth_default_collection_risk**](EthereumApi.md#get_eth_default_collection_risk) | **POST** /insights/eth/getDefaultCollectionRisk | Default Volatility & Risk Metrics by Collection
 [**get_eth_default_token_risk**](EthereumApi.md#get_eth_default_token_risk) | **POST** /insights/eth/getDefaultTokenRisk | Default Volatility & Risk Metrics by Token
+[**get_eth_ens_lookup**](EthereumApi.md#get_eth_ens_lookup) | **POST** /data/eth/getEnsLookup | ENS Lookup
 [**get_eth_historical_events**](EthereumApi.md#get_eth_historical_events) | **POST** /data/eth/getHistoricalEvents | Marketplace Activity by Collection
 [**get_eth_historical_transactions**](EthereumApi.md#get_eth_historical_transactions) | **POST** /data/eth/getHistoricalTransactions | Historical Transactions by Collection
 [**get_eth_leader_board**](EthereumApi.md#get_eth_leader_board) | **POST** /analytics/eth/getLeaderBoard | Ethereum Leaderboard by Collection
@@ -410,6 +411,36 @@ Returns summary of default volatility and risk metrics for a given token
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **get_eth_default_token_risk_request** | Option<[**GetEthDefaultTokenRiskRequest**](GetEthDefaultTokenRiskRequest.md)> |  |  |
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## get_eth_ens_lookup
+
+> get_eth_ens_lookup(get_eth_ens_lookup_request)
+ENS Lookup
+
+Returns Ethereum Name Service data for a given wallet address
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**get_eth_ens_lookup_request** | Option<[**GetEthEnsLookupRequest**](GetEthEnsLookupRequest.md)> |  |  |
 
 ### Return type
 

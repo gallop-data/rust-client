@@ -16,18 +16,15 @@ pub struct GetEthCollectionListingsOhlcRequest {
     /// The Ethereum contract address to identify the collection.
     #[serde(rename = "collection_address")]
     pub collection_address: String,
-    /// The interval at which to return OHLC, e.g. `1D` for daily, `1M` for monthly etc.
+    /// If `true`, report only historical floor prices. Otherwise, report OHFC candlesticks, number of active listings, number of unique owners and the average age of open listings.
+    #[serde(rename = "floor_only", skip_serializing_if = "Option::is_none")]
+    pub floor_only: Option<bool>,
+    /// The interval at which to return Floor prices / OHLF, e.g. `1D` for daily, `1M` for monthly etc. Must be >= `6H`
     #[serde(rename = "frequency", skip_serializing_if = "Option::is_none")]
     pub frequency: Option<String>,
     /// The currency to report results in
     #[serde(rename = "rept_curr", skip_serializing_if = "Option::is_none")]
     pub rept_curr: Option<ReptCurr>,
-    /// The ISO 8601 date/datetime of the oldest listing to pull for calculations
-    #[serde(rename = "listing_start_date", skip_serializing_if = "Option::is_none")]
-    pub listing_start_date: Option<String>,
-    /// The ISO 8601 date/datetime of the most recent listing to pull for calculations
-    #[serde(rename = "listing_end_date", skip_serializing_if = "Option::is_none")]
-    pub listing_end_date: Option<String>,
     /// The ISO 8601 start date/datetime to return results for
     #[serde(rename = "report_start_date", skip_serializing_if = "Option::is_none")]
     pub report_start_date: Option<String>,
@@ -40,10 +37,9 @@ impl GetEthCollectionListingsOhlcRequest {
     pub fn new(collection_address: String) -> GetEthCollectionListingsOhlcRequest {
         GetEthCollectionListingsOhlcRequest {
             collection_address,
+            floor_only: None,
             frequency: None,
             rept_curr: None,
-            listing_start_date: None,
-            listing_end_date: None,
             report_start_date: None,
             report_end_date: None,
         }

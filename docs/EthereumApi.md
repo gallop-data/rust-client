@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_eth_collection_floor_price_ohlc**](EthereumApi.md#get_eth_collection_floor_price_ohlc) | **POST** /analytics/eth/getCollectionFloorPriceOHLC | Intraday Marketplace Floor Price by Collection
 [**get_eth_collection_forecasts**](EthereumApi.md#get_eth_collection_forecasts) | **POST** /insights/eth/getCollectionForecasts | Price Forecast by Collection
-[**get_eth_collection_listings_ohlc**](EthereumApi.md#get_eth_collection_listings_ohlc) | **POST** /analytics/eth/getCollectionListingsOHLC | Collection Price Listings Candlesticks
+[**get_eth_collection_listings_ohlc**](EthereumApi.md#get_eth_collection_listings_ohlc) | **POST** /analytics/eth/getCollectionListingsOHLC | Collection Floor Price and Listings Candlesticks
 [**get_eth_collection_owners**](EthereumApi.md#get_eth_collection_owners) | **POST** /data/eth/getCollectionOwners | Wallet Owners by Collection
 [**get_eth_collection_price_diff**](EthereumApi.md#get_eth_collection_price_diff) | **POST** /analytics/eth/getCollectionPriceDiff | Price Differentiation by Trait
 [**get_eth_collection_sales_ohlc**](EthereumApi.md#get_eth_collection_sales_ohlc) | **POST** /analytics/eth/getCollectionSalesOHLC | Collection Sales Price Candlesticks
@@ -101,9 +101,9 @@ Name | Type | Description  | Required | Notes
 ## get_eth_collection_listings_ohlc
 
 > get_eth_collection_listings_ohlc(get_eth_collection_listings_ohlc_request)
-Collection Price Listings Candlesticks
+Collection Floor Price and Listings Candlesticks
 
-Returns open, high, low, close candlesticks for collection listings at marketplaces at a selected time interval, as well as the number of active listings and the number of unique owners
+Returns historical floor price or more extensive open / high / floor / close candlesticks for collection listings at marketplaces at a selected time interval, as well as the number of active listings, the number of unique owners and the average age of open listings
 
 ### Parameters
 

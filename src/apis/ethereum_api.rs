@@ -369,7 +369,7 @@ pub async fn get_eth_collection_forecasts(configuration: &configuration::Configu
     }
 }
 
-/// Returns open, high, low, close candlesticks for collection listings at marketplaces at a selected time interval, as well as the number of active listings and the number of unique owners
+/// Returns historical floor price or more extensive open / high / floor / close candlesticks for collection listings at marketplaces at a selected time interval, as well as the number of active listings, the number of unique owners and the average age of open listings
 pub async fn get_eth_collection_listings_ohlc(configuration: &configuration::Configuration, get_eth_collection_listings_ohlc_request: Option<crate::models::GetEthCollectionListingsOhlcRequest>) -> Result<(), Error<GetEthCollectionListingsOhlcError>> {
     let local_var_configuration = configuration;
 

@@ -5,10 +5,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **collection_address** | **String** | The Ethereum contract address to identify the collection. | 
-**frequency** | Option<**String**> | The interval at which to return OHLC, e.g. `1D` for daily, `1M` for monthly etc. | [optional]
+**floor_only** | Option<**bool**> | If `true`, report only historical floor prices. Otherwise, report OHFC candlesticks, number of active listings, number of unique owners and the average age of open listings. | [optional]
+**frequency** | Option<**String**> | The interval at which to return Floor prices / OHLF, e.g. `1D` for daily, `1M` for monthly etc. Must be >= `6H` | [optional]
 **rept_curr** | Option<**String**> | The currency to report results in | [optional]
-**listing_start_date** | Option<**String**> | The ISO 8601 date/datetime of the oldest listing to pull for calculations | [optional]
-**listing_end_date** | Option<**String**> | The ISO 8601 date/datetime of the most recent listing to pull for calculations | [optional]
 **report_start_date** | Option<**String**> | The ISO 8601 start date/datetime to return results for | [optional]
 **report_end_date** | Option<**String**> | The ISO 8601 end date/datetime to return results for | [optional]
 

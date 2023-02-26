@@ -33,6 +33,7 @@ Method | HTTP request | Description
 [**get_eth_wallet_labels**](EthereumApi.md#get_eth_wallet_labels) | **POST** /insights/eth/getWalletLabels | Wallet Activity Labels
 [**get_eth_wallet_nfts**](EthereumApi.md#get_eth_wallet_nfts) | **POST** /data/eth/getWalletNFTs | Tokens Owned by Wallet
 [**get_eth_wallet_transactions**](EthereumApi.md#get_eth_wallet_transactions) | **POST** /data/eth/getWalletTransactions | Historical Token Transactions by Wallet
+[**get_eth_wallet_valuation**](EthereumApi.md#get_eth_wallet_valuation) | **POST** /insights/eth/getWalletValuation | Value All Tokens Owned by Wallet
 [**get_eth_wash_trade**](EthereumApi.md#get_eth_wash_trade) | **POST** /analytics/eth/getWashTrade | Wash Trades by Transaction
 [**get_eth_wash_transactions**](EthereumApi.md#get_eth_wash_transactions) | **POST** /analytics/eth/getWashTransactions | Wash Trades by Collection
 
@@ -891,6 +892,36 @@ Returns all historical token transactions for a given wallet
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **get_eth_wallet_transactions_request** | Option<[**GetEthWalletTransactionsRequest**](GetEthWalletTransactionsRequest.md)> |  |  |
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## get_eth_wallet_valuation
+
+> get_eth_wallet_valuation(get_pol_wallet_nfts_request)
+Value All Tokens Owned by Wallet
+
+Returns valuation of all tokens owned for a given wallet
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**get_pol_wallet_nfts_request** | Option<[**GetPolWalletNftsRequest**](GetPolWalletNftsRequest.md)> |  |  |
 
 ### Return type
 

@@ -54,6 +54,7 @@ Class | Method | HTTP request | Description
 *EthereumApi* | [**get_eth_wallet_labels**](docs/EthereumApi.md#get_eth_wallet_labels) | **POST** /insights/eth/getWalletLabels | Wallet Activity Labels
 *EthereumApi* | [**get_eth_wallet_nfts**](docs/EthereumApi.md#get_eth_wallet_nfts) | **POST** /data/eth/getWalletNFTs | Tokens Owned by Wallet
 *EthereumApi* | [**get_eth_wallet_transactions**](docs/EthereumApi.md#get_eth_wallet_transactions) | **POST** /data/eth/getWalletTransactions | Historical Token Transactions by Wallet
+*EthereumApi* | [**get_eth_wallet_valuation**](docs/EthereumApi.md#get_eth_wallet_valuation) | **POST** /insights/eth/getWalletValuation | Value All Tokens Owned by Wallet
 *EthereumApi* | [**get_eth_wash_trade**](docs/EthereumApi.md#get_eth_wash_trade) | **POST** /analytics/eth/getWashTrade | Wash Trades by Transaction
 *EthereumApi* | [**get_eth_wash_transactions**](docs/EthereumApi.md#get_eth_wash_transactions) | **POST** /analytics/eth/getWashTransactions | Wash Trades by Collection
 *PolygonApi* | [**get_pol_collection_forecasts**](docs/PolygonApi.md#get_pol_collection_forecasts) | **POST** /insights/pol/getCollectionForecasts | Price Forecast by Collection

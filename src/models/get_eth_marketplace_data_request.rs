@@ -19,6 +19,9 @@ pub struct GetEthMarketplaceDataRequest {
     /// Array of sub collections (e.g. Art Blocks)
     #[serde(rename = "sub_collection_tags", skip_serializing_if = "Option::is_none")]
     pub sub_collection_tags: Option<Vec<String>>,
+    /// Return normalized data across marketplaces
+    #[serde(rename = "normalized", skip_serializing_if = "Option::is_none")]
+    pub normalized: Option<bool>,
 }
 
 impl GetEthMarketplaceDataRequest {
@@ -26,6 +29,7 @@ impl GetEthMarketplaceDataRequest {
         GetEthMarketplaceDataRequest {
             collection_address,
             sub_collection_tags: None,
+            normalized: None,
         }
     }
 }

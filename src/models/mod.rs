@@ -40,6 +40,8 @@ pub mod get_eth_historical_transactions_request;
 pub use self::get_eth_historical_transactions_request::GetEthHistoricalTransactionsRequest;
 pub mod get_eth_leader_board_request;
 pub use self::get_eth_leader_board_request::GetEthLeaderBoardRequest;
+pub mod get_eth_live_listings_request;
+pub use self::get_eth_live_listings_request::GetEthLiveListingsRequest;
 pub mod get_eth_marketplace_data_request;
 pub use self::get_eth_marketplace_data_request::GetEthMarketplaceDataRequest;
 pub mod get_eth_marketplace_floor_price_request;

@@ -25,6 +25,7 @@ docs/GetEthEnsLookupRequest.md
 docs/GetEthHistoricalEventsRequest.md
 docs/GetEthHistoricalTransactionsRequest.md
 docs/GetEthLeaderBoardRequest.md
+docs/GetEthLiveListingsRequest.md
 docs/GetEthMarketplaceDataRequest.md
 docs/GetEthMarketplaceFloorPriceRequest.md
 docs/GetEthMarketplaceTraitDataRequest.md
@@ -125,6 +126,7 @@ src/models/get_eth_ens_lookup_request.rs
 src/models/get_eth_historical_events_request.rs
 src/models/get_eth_historical_transactions_request.rs
 src/models/get_eth_leader_board_request.rs
+src/models/get_eth_live_listings_request.rs
 src/models/get_eth_marketplace_data_request.rs
 src/models/get_eth_marketplace_floor_price_request.rs
 src/models/get_eth_marketplace_trait_data_request.rs

@@ -21,6 +21,8 @@ Method | HTTP request | Description
 [**get_eth_historical_events**](EthereumApi.md#get_eth_historical_events) | **POST** /data/eth/getHistoricalEvents | Marketplace Activity by Collection
 [**get_eth_historical_transactions**](EthereumApi.md#get_eth_historical_transactions) | **POST** /data/eth/getHistoricalTransactions | Historical Transactions by Collection
 [**get_eth_leader_board**](EthereumApi.md#get_eth_leader_board) | **POST** /analytics/eth/getLeaderBoard | Ethereum Leaderboard by Collection
+[**get_eth_live_listings**](EthereumApi.md#get_eth_live_listings) | **POST** /data/eth/getLiveListings | Collection live listings
+[**get_eth_live_offers**](EthereumApi.md#get_eth_live_offers) | **POST** /data/eth/getLiveOffers | Collection live offers
 [**get_eth_marketplace_data**](EthereumApi.md#get_eth_marketplace_data) | **POST** /data/eth/getMarketplaceData | Collection Summary by Marketplace
 [**get_eth_marketplace_floor_price**](EthereumApi.md#get_eth_marketplace_floor_price) | **POST** /data/eth/getMarketplaceFloorPrice | Marketplace Floor Price by Collection
 [**get_eth_marketplace_trait_data**](EthereumApi.md#get_eth_marketplace_trait_data) | **POST** /data/eth/getMarketplaceTraitData | Collection Listings by Trait & Marketplace
@@ -532,6 +534,66 @@ Returns top collections by volume transaction volume or sales count
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **get_eth_leader_board_request** | Option<[**GetEthLeaderBoardRequest**](GetEthLeaderBoardRequest.md)> |  |  |
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## get_eth_live_listings
+
+> get_eth_live_listings(get_eth_live_listings_request)
+Collection live listings
+
+Returns live listings for a collection
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**get_eth_live_listings_request** | Option<[**GetEthLiveListingsRequest**](GetEthLiveListingsRequest.md)> |  |  |
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## get_eth_live_offers
+
+> get_eth_live_offers(get_eth_live_listings_request)
+Collection live offers
+
+Returns live offers for a collection
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**get_eth_live_listings_request** | Option<[**GetEthLiveListingsRequest**](GetEthLiveListingsRequest.md)> |  |  |
 
 ### Return type
 

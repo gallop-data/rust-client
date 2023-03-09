@@ -42,6 +42,8 @@ Class | Method | HTTP request | Description
 *EthereumApi* | [**get_eth_historical_events**](docs/EthereumApi.md#get_eth_historical_events) | **POST** /data/eth/getHistoricalEvents | Marketplace Activity by Collection
 *EthereumApi* | [**get_eth_historical_transactions**](docs/EthereumApi.md#get_eth_historical_transactions) | **POST** /data/eth/getHistoricalTransactions | Historical Transactions by Collection
 *EthereumApi* | [**get_eth_leader_board**](docs/EthereumApi.md#get_eth_leader_board) | **POST** /analytics/eth/getLeaderBoard | Ethereum Leaderboard by Collection
+*EthereumApi* | [**get_eth_live_listings**](docs/EthereumApi.md#get_eth_live_listings) | **POST** /data/eth/getLiveListings | Collection live listings
+*EthereumApi* | [**get_eth_live_offers**](docs/EthereumApi.md#get_eth_live_offers) | **POST** /data/eth/getLiveOffers | Collection live offers
 *EthereumApi* | [**get_eth_marketplace_data**](docs/EthereumApi.md#get_eth_marketplace_data) | **POST** /data/eth/getMarketplaceData | Collection Summary by Marketplace
 *EthereumApi* | [**get_eth_marketplace_floor_price**](docs/EthereumApi.md#get_eth_marketplace_floor_price) | **POST** /data/eth/getMarketplaceFloorPrice | Marketplace Floor Price by Collection
 *EthereumApi* | [**get_eth_marketplace_trait_data**](docs/EthereumApi.md#get_eth_marketplace_trait_data) | **POST** /data/eth/getMarketplaceTraitData | Collection Listings by Trait & Marketplace
@@ -136,6 +138,7 @@ Class | Method | HTTP request | Description
  - [GetEthHistoricalEventsRequest](docs/GetEthHistoricalEventsRequest.md)
  - [GetEthHistoricalTransactionsRequest](docs/GetEthHistoricalTransactionsRequest.md)
  - [GetEthLeaderBoardRequest](docs/GetEthLeaderBoardRequest.md)
+ - [GetEthLiveListingsRequest](docs/GetEthLiveListingsRequest.md)
  - [GetEthMarketplaceDataRequest](docs/GetEthMarketplaceDataRequest.md)
  - [GetEthMarketplaceFloorPriceRequest](docs/GetEthMarketplaceFloorPriceRequest.md)
  - [GetEthMarketplaceTraitDataRequest](docs/GetEthMarketplaceTraitDataRequest.md)

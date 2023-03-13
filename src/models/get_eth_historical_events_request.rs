@@ -25,6 +25,9 @@ pub struct GetEthHistoricalEventsRequest {
     /// The number of records returned per page.
     #[serde(rename = "page_size", skip_serializing_if = "Option::is_none")]
     pub page_size: Option<PageSize>,
+    /// Only return events occuring after this day [YYYY-MM-DD]
+    #[serde(rename = "event_date", skip_serializing_if = "Option::is_none")]
+    pub event_date: Option<String>,
     /// The type of event: list, transfer, offer, mint, sale, cancel_list or cancel_offer
     #[serde(rename = "event_type", skip_serializing_if = "Option::is_none")]
     pub event_type: Option<EventType>,
@@ -37,6 +40,7 @@ impl GetEthHistoricalEventsRequest {
             token_id: None,
             page: None,
             page_size: None,
+            event_date: None,
             event_type: None,
         }
     }

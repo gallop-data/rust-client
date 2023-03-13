@@ -14,8 +14,8 @@
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct GetEthWalletTransactionsRequest {
     /// The wallet address to search.
-    #[serde(rename = "wallet_address", skip_serializing_if = "Option::is_none")]
-    pub wallet_address: Option<String>,
+    #[serde(rename = "wallet_address")]
+    pub wallet_address: String,
     /// The pagination cursor.
     #[serde(rename = "page", skip_serializing_if = "Option::is_none")]
     pub page: Option<i32>,
@@ -25,9 +25,9 @@ pub struct GetEthWalletTransactionsRequest {
 }
 
 impl GetEthWalletTransactionsRequest {
-    pub fn new() -> GetEthWalletTransactionsRequest {
+    pub fn new(wallet_address: String) -> GetEthWalletTransactionsRequest {
         GetEthWalletTransactionsRequest {
-            wallet_address: None,
+            wallet_address,
             page: None,
             page_size: None,
         }
